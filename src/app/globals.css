@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Suppress browser extension style conflicts */
+[data-darkreader-inline-stroke],
+[data-darkreader-inline-fill],
+[data-darkreader-inline-bgcolor],
+[data-darkreader-inline-color] {
+  /* Allow DarkReader and other extensions to work without hydration conflicts */
+}
