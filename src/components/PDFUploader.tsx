@@ -7,7 +7,7 @@ import { Upload, FileText, X, CheckCircle, AlertCircle } from "lucide-react";
 interface UploadedFile {
   file: File;
   id: string;
-  status: "uploading" | "success" | "error" | "complete";
+  status: "uploading" | "success" | "error";
   progress: number;
 }
 
